@@ -1,0 +1,16 @@
+<!-- ask if they are sure they want to make the delete changes
+	show them the item they want to delete
+	cancel option which will redirect them to the home page--!>
+
+{% extends 'base.html' %}
+
+{% block content %}
+	<p class="delete">Are you sure you want to delete "{{ item }}"</p>
+	
+	<a class="cancel" href="{% url 'home' %}">Cancel</a>
+
+	<form method="POST" action="">
+		{% csrf_token %}
+		<input type="submit" name="delete confirmed">
+	</form>
+{% endblock %}

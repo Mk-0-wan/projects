@@ -1,0 +1,23 @@
+{% extends "base.html" %}
+
+{% block content %}
+<h1 class="hero">Todolist</h1>
+<form method='POST' action='/'>
+	{% csrf_token %}
+	{{form.title}}
+	<input type="submit" name="Create Task">
+</form>
+{% for items in all %}
+<div class="home">
+	<a href="{% url 'update' items.id %}">Update</a>
+	<a href="{% url 'delete' items.id %}">Delete</a>
+
+	<!-- for checking the condition if its meet --!>
+	{% if items.completed == True %}
+		<s>{{items}}</s>
+	{% else %}
+		<span>{{items}}</span>
+	{% endif %}
+</div>
+{% endfor %}
+{% endblock %}

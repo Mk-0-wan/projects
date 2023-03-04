@@ -1,0 +1,20 @@
+migrate use it to update the database for all the changes you have made
+that guy in stack overflow saved your brain alot --- anyways make sure you put the app name before the namespace for the detail
+name of the guy --Damodhar reddy K
+here is the argument--------
+Specify app_name in the urls.py file of an app and use this app_name along with the string literal view name of the url in templates:
+
+django-admin startproject <name>
+syntax --> {% url 'app_name:urlname' %}
+
+app_name = "demo".   # right above url patterns in app
+url_patterns = [
+('login/', views.login, name = 'login')
+]
+
+<a href="{% url 'demo:login' %}".  # Use this in templatep
+Note: use the app_name right above the url_patterns in urls.py file.
+
+ADDING A COMMNET SECTION --
+under the post_detail view we are going to add a comment section using the form.Forms models
+

@@ -1,0 +1,11 @@
+{% extends "base.html" %}
+
+{% block content %}
+{% for book in all %}
+<div class="hero"><a href={% url 'bok:detail' book.pk %}>
+		{{ book.name }}
+	</a></div>
+{% endfor %}
+{% endblock %}
+
+<!-- use the context name to refer to the object

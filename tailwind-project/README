@@ -1,0 +1,13 @@
+make sure you provide the correct path to the html fle so that the changes can be detected by tailwind to and source a new css file each time 
+A complete path towards the html file
+All these is done inside the tailwind.config.json
+Follow closely the steps carefully this is json we are working with
+Look inside the file correctly especially the curly brackets
+overflow-hidden anythin going beyond the specified style will be ignored and hidden
+shadow- for applying all the styles you need
+rounded coners to more like the border radius different sizes are applied
+learn to use the specified length to use
+trick for reapplying the same classes in tailwind 
+go to the src file add the class name and then add the @apply function followed by all the classes difined there
+then restart the the builder for css using tailwind which to me is dev
+anything not supported by the tailwind css builder will not be detected in the live-server side

@@ -1,0 +1,6 @@
+getting the absolute url function takes in the view defined name followed by the kwargs argment taking in the key value pairs
+where you are supposed to pass in the slug which is defined in the view which will be loaded up when generating the url
+while setting the value as the self.slug where the self is the object instance collected in the view.
+
+def get_absolute_url(self):
+  return reverse("detail", kwargs{"slug":self.slug})
