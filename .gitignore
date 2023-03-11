@@ -1,0 +1,6 @@
+*.cfg
+my_evn/lib/
+my_evn/bin/
+my_evn/share/
+tailwind-project/node modules/
+
