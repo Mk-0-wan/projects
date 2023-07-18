@@ -1,4 +1,5 @@
-# LESS LINE PROJECT
-Here is a list of all the projects i have currently worked on
-these is kinda off a bit with too much junk code not needed for the projet to run
-You will need to have some kind of django basic knowledge in order to run these project
+## Less line Project
+* Simple intro to learning about python django framework and how it is working in the backed
+* Fun concepts are include inside the code which provide an easy read and understanding of the code
+* Best place to start understanding how django framework entails and does
+* Have fun while looking around.
